@@ -1,0 +1,83 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(14, 14, 17, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navInner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.navLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.navLink {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.navLink:hover {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 480px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 1.5rem;
+}
+
+.footerInner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footerNote {
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+.footerCopy {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  opacity: 0.6;
+}

@@ -1,0 +1,114 @@
+.section {
+  padding: 4rem 1.5rem 5rem;
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.sectionTag {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.sectionDesc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 3rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.num {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(74, 158, 255, 0.2);
+  line-height: 1;
+  padding-top: 4px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.body {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.sourcesBox {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.sourcesLabel {
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.75rem;
+}
+
+.sourcesList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sourcesList li {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.sourcesList li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-text-tertiary);
+}

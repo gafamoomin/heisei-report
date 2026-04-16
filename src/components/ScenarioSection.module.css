@@ -1,0 +1,217 @@
+.section {
+  padding: 4rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.sectionTag {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.sectionDesc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.sectionDesc strong {
+  color: var(--color-accent-blue);
+  font-weight: 600;
+}
+
+.scenarioGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .scenarioGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.scenarioCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  font-family: var(--font-sans);
+}
+
+.scenarioCard:hover {
+  border-color: var(--color-border-strong);
+}
+
+.featured {
+  border-width: 1.5px;
+}
+
+.scenarioBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid;
+  margin-bottom: 0.75rem;
+}
+
+.featuredMark {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.scenarioRange {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+
+.unit {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.scenarioPct {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.probRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.probLabel {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+}
+
+.probBarBg {
+  flex: 1;
+  height: 4px;
+  background: var(--color-surface-2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.probBar {
+  height: 4px;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.probValue {
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 32px;
+  text-align: right;
+}
+
+.conditions {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.conditionItem {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.conditionDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.expandHint {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.chartWrap {
+  height: 260px;
+  margin-bottom: 2rem;
+}
+
+.summary {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent-blue);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+}
+
+.summaryLabel {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--color-text-tertiary);
+  margin-bottom: 4px;
+}
+
+.summaryMain {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.summaryPct {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-accent-blue);
+}
+
+.summaryNote {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}

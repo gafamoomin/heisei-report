@@ -1,0 +1,87 @@
+.section {
+  padding: 4rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.sectionTag {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--color-text-tertiary);
+  margin-bottom: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.sectionDesc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.riskList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.riskItem {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid;
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.riskItem:hover {
+  border-color: var(--color-border-strong);
+}
+
+.riskHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.riskIcon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.riskTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  flex: 1;
+}
+
+.severityBadge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.riskDetail {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  padding-left: 26px;
+}

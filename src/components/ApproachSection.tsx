@@ -10,7 +10,7 @@ export default function ApproachSection() {
         <div className={styles.sectionTag}>分析手法</div>
         <h2 className={styles.sectionTitle}>5つのアプローチによる複合推定</h2>
         <p className={styles.sectionDesc}>
-          単一の推計手法に依存せず、5つの独立したアプローチで入学者数を推計。各アプローチの中央値の加重平均が最終予測の根拠となります。
+          単一の推計手法に依存せず、5つの独立したアプローチで入学者数を推計。各アプローチのレンジを算出し、その重なりと分布を総合的に判断して最終予測値を導出しています。
         </p>
 
         <div className={styles.approachList}>
@@ -40,7 +40,7 @@ export default function ApproachSection() {
                 </div>
                 <div className={styles.barLabels}>
                   <span className={styles.barRange}>{a.min}〜{a.max}名</span>
-                  <span className={styles.barMid}>中央値 {a.mid}名</span>
+                  <span className={styles.barMid}>推定値 {a.mid}名</span>
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function ApproachSection() {
         </div>
 
         <div className={styles.avgBox}>
-          <div className={styles.avgLabel}>5アプローチの平均レンジ</div>
+          <div className={styles.avgLabel}>5アプローチの総合推定レンジ</div>
           <div className={styles.avgValue}>約55〜90名</div>
         </div>
       </div>
